@@ -32,6 +32,7 @@ main{
 .to-do{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px 0px;
     margin: 0px 20px;
 }
@@ -39,7 +40,7 @@ main{
     padding: 10px 20px;
     height: 400px;
     width: 300px;
-    margin-right: 10px;
+    margin-right: 0px 10px 20px 0px;
     background-color: bisque;
 
 }
@@ -62,6 +63,21 @@ main{
     background-color: aqua;
     width: 400px;
     padding: 10px 20px;
+    overflow: scroll;
+    margin-left: 10px;
+}
+@media  screen and (max-width:822px){
+    .to-do-list{
+    height: 400px;
+    width: 90%;
+    margin-top: 20px;
+    }
+    .navigation-logo{
+        height:30px;
+    }
+    .navigation{
+        font-size: 15px;
+    }
 }
 .list-here{
     display: flex;
@@ -79,4 +95,13 @@ ol{
 .list-item{
     padding: 10px;
     border-bottom: 1px solid blue;
+    overflow-wrap: break-word;
+}
+.description{
+    padding: 20px;
+    background-color: darkolivegreen;
+    color: white;
+}
+h2{
+    padding: 20px;
 }
